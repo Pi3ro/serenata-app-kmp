@@ -8,8 +8,6 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
 import me.pi3ro.serenata.di.initKoin
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
@@ -23,9 +21,7 @@ fun App() {
             modifier = Modifier.fillMaxSize()
         ) {
             initKoin()
-            val navController: NavHostController = rememberNavController()
-
-            NavigationWrapper(navController)
+            NavigationWrapper()
         }
     }
 }
