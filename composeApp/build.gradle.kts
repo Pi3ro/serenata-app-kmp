@@ -54,10 +54,6 @@ kotlin {
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
-
-            implementation(libs.javafx.controls)
-            implementation(libs.javafx.fxml)
-            implementation(libs.javafx.graphics)
         }
     }
 }
@@ -96,11 +92,7 @@ dependencies {
 compose.desktop {
     application {
         mainClass = "me.pi3ro.serenata.MainKt"
-        jvmArgs += listOf(
-            "--add-modules", "javafx.controls,javafx.fxml",
-            "-Dprism.order=sw",  // Fuerza el uso de renderizado por software
-            "-Dprism.verbose=true" // Muestra detalles del pipeline gráfico
-        )
+
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "me.pi3ro.serenata"

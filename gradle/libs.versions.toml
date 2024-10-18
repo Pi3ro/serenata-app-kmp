@@ -17,10 +17,9 @@ kotlin = "2.0.20"
 kotlinx-coroutines = "1.9.0"
 kamel = "0.9.5"
 ktor = "2.3.12"
-navigationCompose = "2.7.0-alpha07"
+navigationCompose = "2.8.0-alpha10"
 koin = "4.0.0"
 mediaPlayerKMP = "2.0.0"
-javafx = "21"
 
 
 [libraries]
@@ -51,10 +50,6 @@ ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "kto
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 
 alert-kmp = { module = "io.github.khubaibkhan4:mediaplayer-kmp", version.ref = "mediaPlayerKMP" }
-
-javafx-controls = { module = "org.openjfx:javafx-controls", version.ref = "javafx" }
-javafx-fxml = { module = "org.openjfx:javafx-fxml", version.ref = "javafx" }
-javafx-graphics = { module = "org.openjfx:javafx-graphics", version.ref = "javafx"}
 
 
 [plugins]
